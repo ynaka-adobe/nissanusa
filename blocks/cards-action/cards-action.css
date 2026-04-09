@@ -1,11 +1,20 @@
+/* Container section */
+.section:has(> .block-content > .cards-action) {
+  background-color: #e8e4e0;
+  border-bottom: 2px solid var(--color-nissan-dark);
+  padding: 0;
+}
+
 .cards-action > ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: var(--spacing-xl) 0;
   display: flex;
   justify-content: space-evenly;
+  align-items: flex-start;
   gap: 0;
-  overflow: hidden;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 .cards-action > ul > li {
@@ -13,45 +22,46 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 10px;
+  padding: var(--spacing-m) var(--spacing-xl);
   cursor: pointer;
   flex: 1;
+  transition: opacity 0.2s;
 }
 
 .cards-action > ul > li:hover {
-  background-color: var(--color-background-shaded);
+  opacity: 0.6;
 }
 
-.cards-action .cards-action-card-image {
-  line-height: 0;
+.cards-action .cards-action-card-icon {
   margin-bottom: var(--spacing-s);
+  line-height: 0;
+  color: var(--color-nissan-dark);
 }
 
-.cards-action .cards-action-card-image img {
+.cards-action .cards-action-card-icon svg {
   width: 40px;
   height: 40px;
-  object-fit: contain;
 }
 
 .cards-action .cards-action-card-body {
-  font-size: var(--body-font-size-m);
+  font-size: var(--body-font-size-l);
   font-family: var(--font-family-regular);
-  color: var(--color-text);
+  color: var(--color-nissan-dark);
 }
 
-.cards-action .cards-action-card-body a {
-  color: var(--color-text);
-  text-decoration: none;
-  font-size: var(--body-font-size-m);
+.cards-action .cards-action-card-body p {
+  margin: 0;
 }
 
 @media (width < 600px) {
   .cards-action > ul {
     flex-wrap: wrap;
+    padding: var(--spacing-l) 0;
   }
 
   .cards-action > ul > li {
     flex: 0 0 50%;
     box-sizing: border-box;
+    padding: var(--spacing-m);
   }
 }
