@@ -1,15 +1,15 @@
 .hero {
-  --gradient-start: rgb(var(--color-dark-base) / 80%);
-  --gradient-end: rgb(var(--color-dark-base) / 20%);
-  --default-min-height: 360px;
+  --gradient-start: rgb(0 0 0 / 60%);
+  --gradient-end: rgb(0 0 0 / 10%);
+  --default-min-height: 400px;
   --min-height: var(--default-min-height);
 
   position: relative;
-  color: #fff;
+  color: var(--color-nissan-white);
   overflow: hidden;
 
   &.small {
-    --min-height: 180px;
+    --min-height: 200px;
   }
 
   &.large {
@@ -21,13 +21,13 @@
   }
 
   &.light {
-    --gradient-start: rgb(var(--color-light-base) / 80%);
+    --gradient-start: rgb(255 255 255 / 80%);
 
-    color: var(--color-dark);
+    color: var(--color-text);
   }
 
   &.dark {
-    color: var(--color-light);
+    color: var(--color-nissan-white);
   }
 
   &.quiet-background {
@@ -66,7 +66,6 @@
     }
 
     > div {
-      /* Used for quiet-background */
       background-color: var(--color-background);
       position: absolute;
       inset: 0;
@@ -91,6 +90,7 @@
 
     p {
       margin: 8px 0;
+      font-family: var(--font-family-light);
     }
 
     .fg-text {
@@ -112,6 +112,24 @@
 
     .hero-heading {
       margin: 0;
+      font-family: var(--font-family-light);
+    }
+
+    a.btn,
+    a.button {
+      background-color: transparent;
+      color: var(--color-nissan-white);
+      border: 1px solid var(--color-nissan-white);
+      border-radius: var(--button-border-radius);
+      padding: var(--button-padding);
+      min-width: var(--button-min-width);
+      transition: var(--button-transition);
+    }
+
+    a.btn:hover,
+    a.button:hover {
+      background-color: var(--color-nissan-white);
+      color: var(--color-nissan-dark);
     }
   }
 
@@ -124,12 +142,12 @@
     }
 
     .hero-foreground {
-      background: #111;
+      background: var(--color-nissan-dark);
     }
 
     &.light {
       .hero-foreground {
-        background: #f9f9f9;
+        background: var(--color-background-shaded);
       }
     }
 

@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-action",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-04-09T03:01:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nissanusa.com/",
+    "originPage": "Nissan USA homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "action-links",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + label + link",
+    "buttonCount": 4,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "quick action link rows",
+      "tool/utility navigation cards",
+      "icon-based shortcut grids"
+    ],
+    "notSuitableFor": [
+      "content-heavy card grids",
+      "image-focused galleries"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-09T03:01:00.000Z"
+  }
+}

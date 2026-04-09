@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-discover",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-04-09T03:01:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nissanusa.com/",
+    "originPage": "Nissan USA homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "discover-cards",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + description + link",
+    "buttonCount": 4,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "vehicle/product discovery grids",
+      "featured content cards with images",
+      "explore/discover sections"
+    ],
+    "notSuitableFor": [
+      "icon-based action cards",
+      "text-only card lists"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-09T03:01:00.000Z"
+  }
+}

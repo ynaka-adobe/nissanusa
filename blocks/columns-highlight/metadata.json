@@ -1,0 +1,38 @@
+{
+  "variantName": "columns-highlight",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-04-09T03:01:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nissanusa.com/",
+    "originPage": "Nissan USA homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "highlight-columns",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + description + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "award/badge highlight sections",
+      "image + text side-by-side layouts",
+      "campaign spotlight sections"
+    ],
+    "notSuitableFor": [
+      "multi-column data comparisons",
+      "three-column layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-09T03:01:00.000Z"
+  }
+}

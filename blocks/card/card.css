@@ -4,9 +4,10 @@
   overflow-wrap: break-word;
   box-shadow: 0 1px 6px 0 rgb(0 0 0 / 12%);
   overflow: hidden;
-  background-color: light-dark(var(--color-gray-100), var(--color-gray-900));
-  color: light-dark(var(--color-dark), var(--color-light));
+  background-color: var(--color-background-shaded);
+  color: var(--color-text);
   transition: all 0.25s ease-in-out;
+  border-radius: 0;
 
   .card-inner {
     display: grid;
@@ -36,10 +37,12 @@
 
   .card-content-container {
     padding: var(--spacing-default);
+    font-family: var(--font-family-regular);
 
     :first-child {
       margin-top: 0;
-      font-size: 16px;
+      font-size: var(--body-font-size-l);
+      font-family: var(--font-family-bold);
     }
 
     :last-child {
@@ -56,6 +59,22 @@
     margin: 0;
     display: flex;
     justify-content: end;
+
+    a {
+      font-family: var(--font-family-regular);
+      font-size: var(--button-font-size);
+      border: 1px solid var(--color-nissan-dark);
+      border-radius: var(--button-border-radius);
+      padding: var(--button-padding);
+      color: var(--color-nissan-dark);
+      text-decoration: none;
+      transition: var(--button-transition);
+
+      &:hover {
+        background-color: var(--color-nissan-dark);
+        color: var(--color-nissan-white);
+      }
+    }
   }
 
   &:not(.quiet):hover {

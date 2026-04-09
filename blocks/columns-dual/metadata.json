@@ -1,0 +1,38 @@
+{
+  "variantName": "columns-dual",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-04-09T03:01:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nissanusa.com/",
+    "originPage": "Nissan USA homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "dual-content",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "two parallel content columns with image + heading + text + CTA each",
+    "buttonCount": 2,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "side-by-side award/recognition sections",
+      "dual feature highlights",
+      "two-item comparison layouts"
+    ],
+    "notSuitableFor": [
+      "single image + text layouts",
+      "three-column layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-09T03:01:00.000Z"
+  }
+}

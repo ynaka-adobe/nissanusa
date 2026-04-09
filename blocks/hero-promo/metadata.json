@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-promo",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-04-09T03:01:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nissanusa.com/",
+    "originPage": "Nissan USA homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "promotional-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + promotional offer + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "promotional landing pages",
+      "homepage hero banners",
+      "campaign pages with offers"
+    ],
+    "notSuitableFor": [
+      "text-only hero sections",
+      "minimal blog heroes"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-09T03:01:00.000Z"
+  }
+}

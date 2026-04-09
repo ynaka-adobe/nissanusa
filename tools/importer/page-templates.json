@@ -1,0 +1,116 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.nissanusa.com/"
+      ],
+      "description": "Nissan USA homepage with hero, vehicle showcases, promotions, and brand content",
+      "blocks": [
+        {
+          "name": "hero-promo",
+          "instances": [
+            ".pfaMedia .carousel-pfa_slide_hero",
+            ".pfaMedia .carousel-pfa_slide_content-holder"
+          ]
+        },
+        {
+          "name": "cards-action",
+          "instances": [
+            ".c_063-0.next-gen"
+          ]
+        },
+        {
+          "name": "carousel-vehicle",
+          "instances": [
+            ".vehiclePFA .c_431-slide-container"
+          ]
+        },
+        {
+          "name": "advanced-tabs",
+          "instances": [
+            ".vehiclePicker .c_431-nav-container",
+            ".vehiclePicker .c_431-categories"
+          ]
+        },
+        {
+          "name": "cards-discover",
+          "instances": [
+            ".horizontalAccordion .c_550"
+          ]
+        },
+        {
+          "name": "columns-highlight",
+          "instances": [
+            ".c_271.c_271--main-container",
+            ".nextGenMedia .c_274"
+          ]
+        },
+        {
+          "name": "columns-dual",
+          "instances": [
+            ".c_431.c_431--secondary-layout"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Promotional Banner",
+          "selector": ".pfaMedia.section",
+          "style": null,
+          "blocks": ["hero-promo", "cards-action"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Vehicle Showcase",
+          "selector": ".vehiclePFA",
+          "style": null,
+          "blocks": ["carousel-vehicle", "advanced-tabs"],
+          "defaultContent": [".onitOffers .c_258"]
+        },
+        {
+          "id": "section-3",
+          "name": "Fastest Growing Brand",
+          "selector": ".c_271.c_271--main-container.c_271--center",
+          "style": null,
+          "blocks": ["columns-highlight"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Pathfinder Campaign",
+          "selector": ".nextGenMedia.section",
+          "style": "dark",
+          "blocks": ["columns-highlight"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "Discover Grid",
+          "selector": ".horizontalAccordion.section",
+          "style": null,
+          "blocks": ["cards-discover"],
+          "defaultContent": [".horizontalAccordion .c_550-tab-headline"]
+        },
+        {
+          "id": "section-6",
+          "name": "Awards",
+          "selector": ".c_431.c_431--secondary-layout",
+          "style": null,
+          "blocks": ["columns-dual"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-7",
+          "name": "Recall Notice",
+          "selector": ".usg-section--shaded-background",
+          "style": "grey",
+          "blocks": [],
+          "defaultContent": [".c_008"]
+        }
+      ]
+    }
+  ]
+}

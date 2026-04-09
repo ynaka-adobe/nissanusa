@@ -1,0 +1,65 @@
+.columns-dual > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-xl) 0;
+}
+
+.columns-dual > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.columns-dual img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: var(--spacing-l);
+}
+
+.columns-dual h2,
+.columns-dual h3 {
+  font-family: var(--font-family-regular);
+  font-size: var(--heading-font-size-m);
+  color: var(--color-text);
+  margin: 0 0 var(--spacing-m);
+}
+
+.columns-dual p {
+  font-size: var(--body-font-size-m);
+  color: var(--color-text);
+  margin: 0 0 var(--spacing-l);
+  line-height: 1.6;
+}
+
+.columns-dual a.button,
+.columns-dual a.btn {
+  display: inline-block;
+  border: 1px solid var(--color-nissan-dark);
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding);
+  min-width: var(--button-min-width);
+  font-size: var(--button-font-size);
+  color: var(--color-nissan-dark);
+  background-color: var(--color-nissan-white);
+  text-decoration: none;
+  transition: var(--button-transition);
+}
+
+.columns-dual a.button:hover,
+.columns-dual a.btn:hover {
+  background-color: var(--color-nissan-dark);
+  color: var(--color-nissan-white);
+}
+
+@media (width >= 900px) {
+  .columns-dual > div {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .columns-dual > div > div {
+    flex: 1;
+  }
+}

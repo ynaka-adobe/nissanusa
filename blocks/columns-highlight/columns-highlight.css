@@ -1,0 +1,71 @@
+.columns-highlight > div {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-xl) 0;
+}
+
+.columns-highlight img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.columns-highlight > div > div {
+  order: 1;
+  padding: var(--spacing-l);
+}
+
+.columns-highlight > div > .columns-highlight-img-col {
+  order: 0;
+}
+
+.columns-highlight > div > .columns-highlight-img-col img {
+  display: block;
+}
+
+.columns-highlight h2,
+.columns-highlight h3 {
+  font-family: var(--font-family-light);
+  font-size: var(--heading-font-size-m);
+  color: var(--color-text);
+  margin: 0 0 var(--spacing-m);
+}
+
+.columns-highlight p {
+  font-size: var(--body-font-size-m);
+  color: var(--color-text);
+  margin: 0 0 var(--spacing-l);
+}
+
+.columns-highlight a.button,
+.columns-highlight a.btn {
+  display: inline-block;
+  border: 1px solid var(--color-nissan-dark);
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding);
+  min-width: var(--button-min-width);
+  font-size: var(--button-font-size);
+  color: var(--color-nissan-dark);
+  background-color: var(--color-nissan-white);
+  text-decoration: none;
+  transition: var(--button-transition);
+}
+
+.columns-highlight a.button:hover,
+.columns-highlight a.btn:hover {
+  background-color: var(--color-nissan-dark);
+  color: var(--color-nissan-white);
+}
+
+@media (width >= 900px) {
+  .columns-highlight > div {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-xl);
+  }
+
+  .columns-highlight > div > div {
+    flex: 1;
+    order: unset;
+  }
+}

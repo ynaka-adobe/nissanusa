@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "url": "https://www.nissanusa.com/",
+  "path": "index",
+  "timestamp": "2026-04-09T04:41:23.236Z",
+  "error": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.nissanusa.com/\nCall log:\n  - navigating to \"https://www.nissanusa.com/\", waiting until \"domcontentloaded\"\n",
+  "errorStack": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.nissanusa.com/\nCall log:\n  - navigating to \"https://www.nissanusa.com/\", waiting until \"domcontentloaded\"\n\n    at processUrl (/home/node/.excat-marketplace/excat/skills/excat-content-import/scripts/run-bulk-import.js:260:18)\n    at async main (/home/node/.excat-marketplace/excat/skills/excat-content-import/scripts/run-bulk-import.js:457:22)"
+}

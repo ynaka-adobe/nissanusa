@@ -16,22 +16,30 @@
   display: flex;
   justify-content: center;
   list-style: none;
-  gap: 12px;
+  gap: var(--spacing-l);
   margin: 0;
-  padding: 0;
+  padding: var(--spacing-m) 0;
 
   button {
     background-color: transparent;
     border: none;
-    font-size: var(--body-font-size-xl);
-    padding: 4px 8px;
+    font-family: var(--font-family-regular);
+    font-size: var(--body-font-size-l);
+    color: var(--color-text-secondary);
+    padding: var(--spacing-s) var(--spacing-m);
     margin: 0;
     border-bottom: 2px solid transparent;
     box-sizing: border-box;
-    transition: border-bottom 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-text);
+    }
 
     &.is-active {
-      border-bottom: 2px solid light-dark(#000, #fff);
+      color: var(--color-text);
+      border-bottom-color: var(--color-nissan-dark);
     }
   }
 }
