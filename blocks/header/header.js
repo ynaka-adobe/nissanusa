@@ -129,12 +129,16 @@ function decorateNavItem(li) {
   li.classList.add('main-nav-item');
   const link = li.querySelector(':scope > p > a');
   if (link) link.classList.add('main-nav-link');
+  const hasSubmenu = li.querySelector(':scope > ul');
   const menu = decorateMegaMenu(li) || decorateMenu(li);
-  if (!(menu || link)) return;
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    toggleMenu(li);
-  });
+  const clickTarget = link || li.querySelector(':scope > p');
+  if (!clickTarget) return;
+  if (hasSubmenu || menu) {
+    clickTarget.addEventListener('click', (e) => {
+      e.preventDefault();
+      toggleMenu(li);
+    });
+  }
 }
 
 function decorateBrandSection(section) {
