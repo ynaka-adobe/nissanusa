@@ -14,9 +14,9 @@ header {
   z-index: 1000;
   overflow: hidden;
   max-height: var(--header-height);
-  background-color: var(--header-bg);
+  background: linear-gradient(to bottom, rgb(0 0 0 / 60%) 0%, rgb(0 0 0 / 20%) 80%, transparent 100%);
   color: var(--header-text);
-  transition: background-color 0.3s;
+  transition: background 0.3s;
 
   ul {
     margin: 0;
@@ -447,8 +447,10 @@ header {
       .main-nav-list {
         display: flex;
         gap: var(--spacing-xl);
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
+        width: 584px;
+        margin-left: 550px;
       }
 
       .main-nav-item {
@@ -485,10 +487,11 @@ header {
             box-shadow: 0 8px 24px rgb(0 0 0 / 15%);
             z-index: 999;
             padding: var(--spacing-xxl) 0;
+            width: 584px;
+            margin-left: 550px;
 
             li {
-              max-width: var(--grid-container-width);
-              margin: var(--spacing-m) auto;
+              margin: var(--spacing-m) 0;
               padding: 0 var(--spacing-xl);
             }
 
